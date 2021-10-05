@@ -33,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @MainThread
-    public boolean dispatchResult(int requestCode, int resultCode, @Nullable Intent data) {
-        if(requestCode==100){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+        if(requestCode == 100){
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
             i.setImageBitmap(bitmap);
         }
         else{
             Toast.makeText(this, "error", Toast.LENGTH_SHORT).show();
         }
-        return getActivityResultRegistry().dispatchResult(requestCode, resultCode, data);
     }
 }
