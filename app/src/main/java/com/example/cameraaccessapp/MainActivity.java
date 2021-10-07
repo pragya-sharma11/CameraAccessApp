@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1;
+    Button b1,b2;
     ImageView i;
 
     @Override
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         b1 = findViewById(R.id.button);
+        b2 = findViewById(R.id.button2);
         i = findViewById(R.id.imageView);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
