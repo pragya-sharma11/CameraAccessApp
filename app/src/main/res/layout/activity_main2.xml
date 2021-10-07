@@ -21,11 +21,23 @@
         android:id="@+id/button3"
         android:layout_width="305dp"
         android:layout_height="88dp"
-        android:text="Star Video"
+        android:text="Start Video"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.682" />
+        app:layout_constraintVertical_bias="0.606" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="283dp"
+        android:layout_height="97dp"
+        android:text="capture image"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
 </androidx.constraintlayout.widget.ConstraintLayout>

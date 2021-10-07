@@ -16,7 +16,7 @@ import android.widget.VideoView;
 import java.net.URI;
 
 public class MainActivity2 extends AppCompatActivity {
-    Button b;
+    Button b,b1;
     MediaController m;
     VideoView v;
     Uri u;
@@ -25,8 +25,17 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         b = findViewById(R.id.button3);
+        b1 = findViewById(R.id.button4);
         v = findViewById(R.id.videoView);
         m = new MediaController(this);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
